@@ -6,12 +6,13 @@
 /*   By: aliburdi <aliburdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 14:19:15 by aliburdi          #+#    #+#             */
-/*   Updated: 2023/09/20 23:44:44 by aliburdi         ###   ########.fr       */
+/*   Updated: 2023/09/21 19:36:58 by aliburdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <stdlib.h>
+#include <string>
 
 class Contact
 {
@@ -59,11 +60,33 @@ class Contact
 		{
 			return (this->nickname);
 		}
+		std::string get_phone_number(void)
+		{
+			return (this->phone_number);
+		}
+		std::string get_darkest_secret(void)
+		{
+			return (this->darkest_secret);
+		}
+		int get_size_first_name(void)
+		{
+			return (this->first_name.size());
+		}
+		int get_size_last_name(void)
+		{
+			return (this->last_name.size());
+		}
+		int get_size_nickname(void)
+		{
+			return (this->nickname.size());
+		}
 };
 
 class PhoneBook
 {
 	public:
 		int	i;
-		Contact _contact[8];
+		int	x;
+		int	k;
+		Contact contact[8];
 };
