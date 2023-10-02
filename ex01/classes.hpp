@@ -6,9 +6,12 @@
 /*   By: aliburdi <aliburdi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 14:19:15 by aliburdi          #+#    #+#             */
-/*   Updated: 2023/09/21 19:36:58 by aliburdi         ###   ########.fr       */
+/*   Updated: 2023/10/02 17:28:58 by aliburdi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#ifndef CLASSES_HPP
+#define CLASSES_HPP
 
 #include <iostream>
 #include <stdlib.h>
@@ -90,3 +93,5 @@ class PhoneBook
 		int	k;
 		Contact contact[8];
 };
+
+#endif
